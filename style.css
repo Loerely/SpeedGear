@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    display: flex;
+}
+button:hover, a:hover{
+    cursor: pointer;
+}
+button:hover, .dialog input:hover{
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.28);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+                                /*Шапка сайта*/
+.header{
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.18);
+}
+.logo_menu{
+    flex-direction: row;
+}
+.inf_header{
+}
+.but_header1{
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22pt;
+}
+.inf_header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_div{
+    flex-direction: row;
+}
+
+
+
+
+
+.but_header1 div, .logo_menu div{
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.but_header2 div{
+    border-left: 1px solid black;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header img{
+    width: 100%;
+}
+
+
+
+
+                                /*Тело сайта*/
+.body{
+    flex-direction: column;
+}
+
+            /*Блок1*/
+.bl1{
+    flex-direction: column;
+    width: 100%;
+    height: 95vh;
+    background-image: url(img/img/test.jpg);
+    background-size: 100% 100%;
+}
+.inf_bl1{
+    justify-content: space-between;
+    height: 5vh;
+    padding: 20px;
+}
+.inf_bl1 div{
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.inf_bl1 div img{
+    margin-right: 10px;
+    width: 20%;
+}
+.zag, .zag2{
+    position: relative;
+    top: 80%;
+    left: 2%;
+    padding: 10px;
+    background-color: #e8e8e8;
+    font-size: 26pt;
+    width: max-content;
+    height: max-content;
+}
+
+
+            /*Блок 2, блок со слайдером*/
+.bl2{
+    padding: 2%;
+    height: 90vh;
+    flex-direction: column;
+}
+.bl2 .logo{
+    font-size: 26pt;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container_slider{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+}
+.slider{
+    transition: transform 3s ease-in-out;
+}
+.prev_but, .next_but{
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 44px;
+    color: black;
+    background-color: white;
+    width: 60px;
+}
+.prev_but:hover, .next_but:hover{
+    cursor: pointer;
+}
+.prev_but{
+    left: 1px;
+}
+.next_but{
+    right: 1px;
+}
+
+
+.slide{
+    flex-direction: column;
+    height:87%;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.28);
+}
+.slide_img_txt{
+    flex-direction: column;
+    height: 80%;
+}
+.slide_img_txt p{
+    font-size: 16pt;
+}
+.zen{
+    height: 10%;
+    font-size: 18pt;
+    margin-top: 40px;
+}
+.slide .but{
+    flex-direction: row;
+    height: 10%;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.slider dir{
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    column-gap: 5%;
+}
+.slider dir img{
+    width: 70%;
+    padding-bottom: 10px;
+}
+.slider dir div{
+    align-items: center;
+}
+.more, .buy{
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+.more{
+    background-color: rgb(231, 231, 231);
+}
+.buy{
+    background-color: #80c461;
+}
+
+
+
+            /*Блок3*/
+.bl3{
+    width: 100%;
+    height: 24vh;
+    flex-direction: column;
+    align-items: center;
+}
+.bl3 .h1{
+    font-size: 22pt;
+}
+.bl3 .p{
+    font-size: 18pt;
+    width: 40%;
+    text-align: center;
+    color: #666666;
+}
+.bl3 div{
+    flex-direction: column;
+    align-items: center;
+}
+.bl3 button{
+    border: none;
+    font-size: 18pt;
+    width: 200px;
+    height: 50px;
+    background-color: #80c461;
+    margin-top: 40px;
+}
+
+
+
+            /*Блок4*/
+.bl4{
+    flex-direction: column;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 110vh;
+    justify-content: space-between;
+}
+.bl4 dir{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: 38%;
+}
+.bl4 div{
+    background-size: 100% 100%;
+    flex-direction: column;
+}
+.bl4 .content1{
+    background-image: url(img/img/futbol1.png);
+    width: 48%;
+}
+.bl4 .content2{
+    background-image: url(img/img/volejbol-vzroslye-2021.png);
+    width: 48%;
+}
+.bl4 .content3{
+    background-image: url(img/img/1614678490_53-p-fon-golf-64.png);
+    height: 58%;
+}
+.bl4 div .test1{
+    margin-top: 5%;
+    margin-left: 50px;
+    font-size: 22pt;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.bl4 div .test2{
+    margin-top: 6%;
+    margin-left: 50px;
+    font-size: 16pt;
+    width: 40%;
+    color: #ffffff;
+}
+.bl4 div .h1{
+    margin-top: 5%;
+    margin-left: 80px;
+    font-size: 26pt;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.bl4 div .p{
+    margin-top: 6%;
+    margin-left: 60px;
+    font-size: 18pt;
+    width: 35%;
+    color: #ffffff;
+}
+.bl4 div button{
+    border: none;
+    background-color: #80c461;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.bl4 div .button1{
+    width: 130px;
+    height: 36px;
+    font-size: 15pt;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.bl4 div .button2{
+    width: 200px;
+    height: 50px;
+    font-size: 18pt;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+
+            /*Блок5*/
+.bl5{
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.bl5 .inf{
+    flex-direction: row;
+}
+.bl5 div{
+    flex-direction: column; 
+    margin-left: 40px;
+    width: 35%;
+}
+.bl5 .logo{
+    font-size: 18pt;
+}
+.bl5 .p{
+    font-size: 16pt;
+    width: 100%;
+    color: #666666;
+    margin-top: 20px;
+}
+
+                                /*Подвал сайта*/
+.bottom{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.18);
+    flex-shrink: 0;
+}
+.bottom .inf{
+    flex-direction: column;
+}
+.inf_bottom{
+    flex-direction: row;
+}
+.bottom .social{
+    flex-direction: row;
+}
+
+.bottom .sw{
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom .opl{
+    flex-direction: row;
+}
+.bottom img{
+    padding: 10px;
+}
+
+
+
+
+
+/* Создание блока */
+.but_reg{
+    background: #fff url(img/Group.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 25px;
+}
+.dialog[open]{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+}
+.dialog p{
+    margin-top: 20px;
+}
+.dialog a{
+    margin-top: 20px;
+    border: 1px #80c461 solid;
+    font-size: 14pt;
+    background-color: #80c461;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+}
+.for_dialog{
+    width: 100%;
+    height: 1px;
+    justify-content: flex-end;
+}
+.dialog input{
+    margin-top: 20px;
+    border: 1px #80c461 solid;
+    font-size: 14pt;
+    background-color: #80c461;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+}
+
+
+/*Диалог 2*/
+#dialog2[open]{
+    width: 300px;
+    height: 150px;
+}
